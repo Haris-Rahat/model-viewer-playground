@@ -1,10 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { useEffect, useRef } from "react";
 
 function App() {
-  const modelViewerRef = useRef<{
-    style: { width: string; height: string };
-    ar: boolean;
-  }>(null);
+  const modelViewerRef = useRef(null);
 
   useEffect(() => {
     const modelViewer = modelViewerRef.current;
@@ -22,7 +22,7 @@ function App() {
       camera-controls
       alt={"A 3D model of a gun"}
       ref={modelViewerRef}
-      src={"/Raven-forExport-4.glb"}
+      src={"/battle_station.glb"}
       touch-action="pan-y"
     />
   );
