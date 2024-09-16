@@ -22,7 +22,6 @@ function App() {
       alt={"A 3D model of a gun"}
       ref={modelViewerRef}
       src={"/Raven-forExport-4.glb"}
-      ar-modes="webxr scene-viewer quick-look"
       touch-action="pan-y"
     />
   );
