@@ -21,7 +21,7 @@ function App() {
       camera-controls
       alt={"A 3D model of a gun"}
       ref={modelViewerRef}
-      src={"/Raven-forExport-4.glb"}
+      src={"/NeilArmstrong.glb"}
       touch-action="pan-y"
     />
   );
