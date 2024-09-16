@@ -1,9 +1,10 @@
-import "@google/model-viewer";
-import { ModelViewerElement } from "@google/model-viewer";
 import { useEffect, useRef } from "react";
 
 function App() {
-  const modelViewerRef = useRef<ModelViewerElement>(null);
+  const modelViewerRef = useRef<{
+    style: { width: string; height: string };
+    ar: boolean;
+  }>(null);
 
   useEffect(() => {
     const modelViewer = modelViewerRef.current;
